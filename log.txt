@@ -1,0 +1,307 @@
+HP@Animesh MINGW64 ~ (main)
+$ cd c/
+bash: cd: c/: No such file or directory
+
+HP@Animesh MINGW64 ~ (main)
+$ cd /c
+
+HP@Animesh MINGW64 /c
+$ mkdir 4_march_assignment
+
+HP@Animesh MINGW64 /c
+$ cd 4_march_assignment
+
+HP@Animesh MINGW64 /c/4_march_assignment
+$ mkdir task
+
+HP@Animesh MINGW64 /c/4_march_assignment
+$ cd task
+
+HP@Animesh MINGW64 /c/4_march_assignment/task
+$ assess_0011
+bash: assess_0011: command not found
+
+HP@Animesh MINGW64 /c/4_march_assignment/task
+$ mkdir assess_0011
+
+HP@Animesh MINGW64 /c/4_march_assignment/task
+$ cd assess_0011
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011
+$ pwd
+/c/4_march_assignment/task/assess_0011
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011
+$ mkdir img
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011
+$ git init
+Initialized empty Git repository in C:/4_march_assignment/task/assess_0011/.git/
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ touch new.c
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ touch text.txt
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ touch code.html
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        code.html
+        new.c
+        okimage.png
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git add .
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git commit -m "added html ,c ,txt and image file"
+[master (root-commit) baeecc2] added html ,c ,txt and image file
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 code.html
+ create mode 100644 new.c
+ create mode 100644 okimage.png
+ create mode 100644 text.txt
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   code.html
+        modified:   new.c
+        modified:   text.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git add .
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   code.html
+        modified:   new.c
+        modified:   text.txt
+
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git commit -m "Commit 1"
+[master 08d7814] Commit 1
+ 3 files changed, 15 insertions(+)
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ vi new.c
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git add .
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git commit -m "Commit 2"
+[master 65da19a] Commit 2
+ 1 file changed, 23 insertions(+), 1 deletion(-)
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ ls
+code.html  img/  new.c  okimage.png  text.txt
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ vi text.txt
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ vi code.html
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   code.html
+        modified:   text.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git add .
+warning: in the working copy of 'text.txt', LF will be replaced by CRLF the next time Git touches it
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git commit -m "Commit 3"
+[master a7c38f9] Commit 3
+ 2 files changed, 23 insertions(+), 5 deletions(-)
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (master)
+$ git remote add origin https://github.com/AnimeshSoni777/Assess_0011.git
+git branch -M main
+git push -u origin main
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (16/16), 9.38 KiB | 2.35 MiB/s, done.
+Total 16 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AnimeshSoni777/Assess_0011.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ touch .gitignore
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ ls
+code.html  img/  new.c  okimage.png  text.txt
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ ls -a
+./  ../  .git/  .gitignore  code.html  img/  new.c  okimage.png  text.txt
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ vi .gitignore
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ vi .gitignore
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        img/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ git add .
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'img/.gitignore', LF will be replaced by CRLF the next time Git touches it
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ git commit -m " added .gitignore and ignored some files"
+[main 70cfd95]  added .gitignore and ignored some files
+ 3 files changed, 31 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 img/.gitignore
+ create mode 100644 img/code.html
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   img/code.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ git add .
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ git commit -m "added and modified the all files & txt , html and c files are ignored by .gitignore"
+[main dc7409e] added and modified the all files & txt , html and c files are ignored by .gitignore
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ touch log.txt
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ git log -oneline
+fatal: unrecognized argument: -oneline
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ git log --oneline
+dc7409e (HEAD -> main) added and modified the all files & txt , html and c files are ignored by .gitignore
+70cfd95  added .gitignore and ignored some files
+a7c38f9 (origin/main) Commit 3
+65da19a Commit 2
+08d7814 Commit 1
+baeecc2 added html ,c ,txt and image file
+
+HP@Animesh MINGW64 /c/4_march_assignment/task/assess_0011 (main)
+$ git log
+commit dc7409e31fa73104b79c235587704076cc0125af (HEAD -> main)
+Author: Animesh <animeshsoni777@gmail.com>
+Date:   Mon Mar 4 15:52:42 2024 +0530
+
+    added and modified the all files & txt , html and c files are ignored by .gitignore
+
+commit 70cfd95b71bf6c053fa48e9970ee219e41d1dead
+Author: Animesh <animeshsoni777@gmail.com>
+Date:   Mon Mar 4 15:42:50 2024 +0530
+
+     added .gitignore and ignored some files
+
+commit a7c38f9de0cebdf808940d5cb024e47b43c6ac84 (origin/main)
+Author: Animesh <animeshsoni777@gmail.com>
+Date:   Mon Mar 4 15:32:18 2024 +0530
+
+    Commit 3
+
+commit 65da19a00d4b989ea9f1a4c53656cdaf0e56e119
+Author: Animesh <animeshsoni777@gmail.com>
+Date:   Mon Mar 4 15:29:18 2024 +0530
+
+    Commit 2
+
+commit 08d7814f35b0c7e175e0b6ce280ea81f28f97e72
+Author: Animesh <animeshsoni777@gmail.com>
+Date:   Mon Mar 4 15:27:59 2024 +0530
+
+    Commit 1
+
+commit baeecc2f9cded754e17067d0d5a9ee8929aeaf14
+Author: Animesh <animeshsoni777@gmail.com>
+Date:   Mon Mar 4 15:24:15 2024 +0530
+
+    added html ,c ,txt and image file
+
+
